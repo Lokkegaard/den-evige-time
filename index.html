@@ -48,7 +48,7 @@ tw-link:hover, .enchantment-link:hover {
   color: #7d7766;
   border-top: 1px solid #2b2a33;
   padding-top: 0.5em;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Status" tags="footer" position="25,25" size="100,100">(unless: (passage:)&#39;s tags contains &quot;slutning&quot;)[&lt;div class=&quot;status&quot;&gt;Befriede elever: $befriede af 15 &amp;nbsp;|&amp;nbsp; Frygt: $frygt &amp;nbsp;|&amp;nbsp; Point lige nu: (print: $befriede * 10 - $frygt * 5)&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="150,25" size="100,100">(set: $befriede to 0, $frygt to 0)
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Status" tags="footer" position="25,25" size="100,100">(unless: (passage:)&#39;s tags contains &quot;slutning&quot;)[&lt;div class=&quot;status&quot;&gt;Befriede elever: $befriede af 15 &amp;nbsp;|&amp;nbsp; Frygt: $frygt &amp;nbsp;|&amp;nbsp; Point lige nu: (print: $befriede * 10 - $frygt * 5)&lt;/div&gt;]</tw-passagedata><tw-passagedata pid="2" name="Start" tags="" position="150,25" size="100,100">{(set: $befriede to 0, $frygt to 0)
 (set: $lommelygte to false, $walkie to false, $kort to false, $ur to false)
 (set: $mille to false, $drenge to false, $piger to false, $hector to false)
 (set: $hectorbliver to false, $anaines to false, $smaa to false, $osvald to false)
@@ -67,7 +67,7 @@ tw-link:hover, .enchantment-link:hover {
 (set: $cykelP to (cond: $pigenavne contains $cykel, &quot;hun&quot;, &quot;han&quot;), $cykelPS to (cond: $pigenavne contains $cykel, &quot;Hun&quot;, &quot;Han&quot;))
 (set: $ribbeP to (cond: $pigenavne contains $ribbe, &quot;hun&quot;, &quot;han&quot;), $ribbePS to (cond: $pigenavne contains $ribbe, &quot;Hun&quot;, &quot;Han&quot;), $ribbeO to (cond: $pigenavne contains $ribbe, &quot;hende&quot;, &quot;ham&quot;))
 (set: $pudeP to (cond: $pigenavne contains $pude, &quot;hun&quot;, &quot;han&quot;), $pudePS to (cond: $pigenavne contains $pude, &quot;Hun&quot;, &quot;Han&quot;))
-(set: $venPoss to (cond: $ven&#39;s last is &quot;s&quot;, $ven + &quot;&#39;&quot;, $ven + &quot;s&quot;), $ribbePoss to (cond: $ribbe&#39;s last is &quot;s&quot;, $ribbe + &quot;&#39;&quot;, $ribbe + &quot;s&quot;))
+(set: $venPoss to (cond: $ven&#39;s last is &quot;s&quot;, $ven + &quot;&#39;&quot;, $ven + &quot;s&quot;), $ribbePoss to (cond: $ribbe&#39;s last is &quot;s&quot;, $ribbe + &quot;&#39;&quot;, $ribbe + &quot;s&quot;))}
 
 &lt;h1&gt;&lt;span class=&quot;rod&quot;&gt;DEN EVIGE TIME&lt;/span&gt;&lt;/h1&gt;
 
